@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 HI ROB
 HI JOSH
+=======
+HI ROB THIS IS A COLLISION!
+>>>>>>> origin/master
