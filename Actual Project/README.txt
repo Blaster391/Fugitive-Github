@@ -1,1 +1,2 @@
-Test
+This will be the folder of the main Unity project that we are using, this is the most important folder in the project.
+Make sure you notify the group if you are making changes to scripts in here so there are no collisions (This could be done through linoit)
