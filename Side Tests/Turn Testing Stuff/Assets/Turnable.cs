@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Turnable : MonoBehaviour {
+public abstract class Turnable : MonoBehaviour {
 
-	public abstract int turnCounter();
+	public abstract void takeTurn();
 }

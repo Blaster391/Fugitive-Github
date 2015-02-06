@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : Turnable {
+public class Player : Unit {
 
 	// Use this for initialization
 	void Start () {
