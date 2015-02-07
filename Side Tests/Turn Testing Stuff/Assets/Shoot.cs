@@ -1,13 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : Unit {
+public class Shoot : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		registerTurnMaster ();
-		addAction (new Move (this));
-		addAction (new Move (this));
+	
 	}
 	
 	// Update is called once per frame
