@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 public abstract class Unit : MonoBehaviour, Turnable {
 
-	public List<Action> actionQueue = new List<Action>();
+	public List<Action> actionQueue = new List<Action>(); //List of actions for the character to perform in order.
 
-	public void registerTurnMaster(){
+	public void registerTurnMaster(){ //Puts the character on the turn queue, should be in constructor?
 		GameObject.Find ("MASTER").GetComponent<TurnMaster> ().objectAdd (this);
 	}
 
@@ -21,7 +21,7 @@ public abstract class Unit : MonoBehaviour, Turnable {
 		actionQueue.Remove (a);
 	}
 
-	public void takeTurn(){
+	public void takeTurn(){ //Takes the turn by picking the first action on the list.
 		actionQueue [0].doAction ();
 	}
 

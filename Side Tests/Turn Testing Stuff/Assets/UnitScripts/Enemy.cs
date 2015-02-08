@@ -1,17 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : Unit {
+public class Enemy : Unit{
 
 	// Use this for initialization
 	void Start () {
 		registerTurnMaster ();
 		addAction (new Move (this));
-		addAction (new Move (this));
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+		addAction (new Shoot (this, GameObject.Find ("1st Character").GetComponent<Unit>()));
 	}
 }

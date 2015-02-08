@@ -46,15 +46,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AbstractAction.cs" />
-     <Compile Include="Assets\Action.cs" />
-     <Compile Include="Assets\Enemy.cs" />
-     <Compile Include="Assets\Move.cs" />
-     <Compile Include="Assets\Player.cs" />
-     <Compile Include="Assets\Shoot.cs" />
+     <Compile Include="Assets\Actions\Abstract\AbstractAction.cs" />
+     <Compile Include="Assets\Actions\Abstract\Action.cs" />
+     <Compile Include="Assets\Actions\Move.cs" />
+     <Compile Include="Assets\Actions\Shoot.cs" />
      <Compile Include="Assets\TurnMaster.cs" />
-     <Compile Include="Assets\Turnable.cs" />
-     <Compile Include="Assets\Unit.cs" />
+     <Compile Include="Assets\UnitScripts\Abstract\Turnable.cs" />
+     <Compile Include="Assets\UnitScripts\Abstract\Unit.cs" />
+     <Compile Include="Assets\UnitScripts\Enemy.cs" />
+     <Compile Include="Assets\UnitScripts\Player.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>

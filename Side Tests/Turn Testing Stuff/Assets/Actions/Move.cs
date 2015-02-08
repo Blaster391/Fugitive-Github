@@ -4,20 +4,16 @@ using System.Collections;
 public class Move : AbstractAction {
 
 	bool started = false;
-	float completion = 0;
+	float completion = 0; //When completion is 1, the action is finished.
 
     public Move(Turnable t) : base(t){}
 
-	public override void doAction(){
+	public override void doAction(){ //Start or continue the action
 		if (started == false) {
 			beginAction ();
 		} else {
 			continueAction();
 		}
-	}
-
-	public override Turnable getUser(){
-		return user;
 	}
 
 	void beginAction(){
