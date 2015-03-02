@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BasicMove : MonoBehaviour {
+public class BasicMove : AbstractAction {
 
-	// Use this for initialization
-	void Start () {
-	
+
+	public BasicMove() : AbstractAction(){
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public override void doAction (){
+		Debug.Log ("Moving");
+	}
+	public override void cancelAction(){
+
 	}
 }

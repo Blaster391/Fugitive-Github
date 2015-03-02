@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BasicPlayer : MonoBehaviour {
+public class BasicPlayer : AbstractUnit {
 
 	// Use this for initialization
 	void Start () {

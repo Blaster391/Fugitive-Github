@@ -1,15 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
-public class AbstractTurnable : MonoBehaviour {
+public abstract class AbstractTurnable : MonoBehaviour, ITurnable{
 
-	// Use this for initialization
-	void Start () {
-	
+	Queue<IEffect> effectQueue = new Queue<IEffect>();
+
+	public abstract void takeTurn();
+
+	public void doEffects(){
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	void register(){
+		GameObject.Find ("GameMaster").GetComponent<TurnMaster> ().registerTurn (this);
+	}
+	void remove(){
+		GameObject.Find ("GameMaster").GetComponent<TurnMaster> ().removeTurn (this);
 	}
 }

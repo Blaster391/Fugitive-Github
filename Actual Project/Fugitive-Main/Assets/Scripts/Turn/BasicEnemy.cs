@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BasicEnemy : MonoBehaviour {
+public class BasicEnemy : AbstractUnit {
 
 	// Use this for initialization
 	void Start () {

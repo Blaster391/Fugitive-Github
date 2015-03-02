@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AbstractAction : MonoBehaviour {
+public abstract class AbstractAction : MonoBehaviour ,IAction {
 
-	// Use this for initialization
-	void Start () {
-	
+	ITurnable user;
+
+	public AbstractAction(ITurnable user){
+		this.user = user;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
+	public abstract void doAction();
+	public abstract void cancelAction();
+
 }

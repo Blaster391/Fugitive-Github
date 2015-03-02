@@ -49,11 +49,16 @@
      <Compile Include="Assets\Scripts\Actions\Abstract Actions\AbstractAction.cs" />
      <Compile Include="Assets\Scripts\Actions\Abstract Actions\IAction.cs" />
      <Compile Include="Assets\Scripts\Actions\BasicMove.cs" />
+     <Compile Include="Assets\Scripts\Effects\Abstract Effects\AbstractEffect.cs" />
+     <Compile Include="Assets\Scripts\Effects\Abstract Effects\IEffect.cs" />
+     <Compile Include="Assets\Scripts\Effects\takeDamage.cs" />
+     <Compile Include="Assets\Scripts\Misc\CameraControls.cs" />
      <Compile Include="Assets\Scripts\Turn\Abstract\AbstractTurnable.cs" />
      <Compile Include="Assets\Scripts\Turn\Abstract\AbstractUnit.cs" />
      <Compile Include="Assets\Scripts\Turn\Abstract\ITurnable.cs" />
      <Compile Include="Assets\Scripts\Turn\BasicEnemy.cs" />
      <Compile Include="Assets\Scripts\Turn\BasicPlayer.cs" />
+     <Compile Include="Assets\Scripts\Turn\TurnMaster.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
