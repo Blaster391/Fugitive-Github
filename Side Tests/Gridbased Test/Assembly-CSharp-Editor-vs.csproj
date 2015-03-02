@@ -89,13 +89,13 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="ProBuilderCore">
- <HintPath>C:/Users/Robert/Documents/Fugitive-Github/Side Tests/Gridbased Test/Assets/6by7/ProBuilder/Classes/ProBuilderCore.dll</HintPath>
+ <HintPath>C:/Users/Robert/Documents/Fugi1/Side Tests/Gridbased Test/Assets/6by7/ProBuilder/Classes/ProBuilderCore.dll</HintPath>
  </Reference>
  <Reference Include="ProBuilderEditor">
- <HintPath>C:/Users/Robert/Documents/Fugitive-Github/Side Tests/Gridbased Test/Assets/6by7/ProBuilder/Editor/ProBuilderEditor.dll</HintPath>
+ <HintPath>C:/Users/Robert/Documents/Fugi1/Side Tests/Gridbased Test/Assets/6by7/ProBuilder/Editor/ProBuilderEditor.dll</HintPath>
  </Reference>
  <Reference Include="SixBySeven">
- <HintPath>C:/Users/Robert/Documents/Fugitive-Github/Side Tests/Gridbased Test/Assets/6by7/Shared/Code/SixBySeven.dll</HintPath>
+ <HintPath>C:/Users/Robert/Documents/Fugi1/Side Tests/Gridbased Test/Assets/6by7/Shared/Code/SixBySeven.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
