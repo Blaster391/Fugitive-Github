@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AbstractEffect : IEffect {
+public abstract class AbstractEffect : IEffect {
 
 	ITurnable target;
 
-	public AbstractEffect(ITurnable target){
+	public abstract void doEffect ();
 
+	public AbstractEffect(ITurnable target){
+		this.target = target;
 	}
 }

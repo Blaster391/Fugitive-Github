@@ -17,7 +17,7 @@ public class TurnMaster : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate() {
-		if (Input.GetKeyDown ("Pause") != 0) {
+		if (Input.GetKeyDown ("Pause")) {
 			if(!paused){
 				paused = true;
 			}else{
@@ -28,11 +28,11 @@ public class TurnMaster : MonoBehaviour {
 
 	IEnumerator doTurns(){
 		while(paused == true){
-			yield return WaitForSeconds(waitTime);
+			yield return new WaitForSeconds(waitTime);
 		}
 		foreach (ITurnable turn in turnList) {
 			while(freeze == true){
-				yield return WaitForSeconds(waitTime);
+				yield return new WaitForSeconds(waitTime);
 			}
 			turn.takeTurn();
 		}
@@ -42,7 +42,7 @@ public class TurnMaster : MonoBehaviour {
 	IEnumerator doEffects(){
 		foreach (ITurnable turn in turnList) {
 			while(freeze == true){
-				yield return WaitForSeconds(waitTime);
+				yield return new WaitForSeconds(waitTime);
 			}
 			turn.doEffects ();
 		}

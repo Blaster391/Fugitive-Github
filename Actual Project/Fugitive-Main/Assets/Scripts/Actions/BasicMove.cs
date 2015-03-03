@@ -4,7 +4,7 @@ using System.Collections;
 public class BasicMove : AbstractAction {
 
 
-	public BasicMove() : AbstractAction(){
+	public BasicMove(ITurnable user) : base(user){
 
 	}
 

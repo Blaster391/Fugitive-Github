@@ -9,12 +9,18 @@ public abstract class AbstractTurnable : MonoBehaviour, ITurnable{
 	public abstract void takeTurn();
 
 	public void doEffects(){
-
+		while (effectQueue.Count > 0) {
+			effectQueue.Dequeue().doEffect();
+		}
 	}
-	void register(){
+	public void addEffect(IEffect effect){
+		effectQueue.Enqueue (effect);
+	}
+
+	public void register(){
 		GameObject.Find ("GameMaster").GetComponent<TurnMaster> ().registerTurn (this);
 	}
-	void remove(){
+	public void remove(){
 		GameObject.Find ("GameMaster").GetComponent<TurnMaster> ().removeTurn (this);
 	}
 }

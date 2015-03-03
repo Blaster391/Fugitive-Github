@@ -4,11 +4,11 @@ using System.Collections;
 public class takeDamage : AbstractEffect {
 	private int damage;
 
-	public takeDamage(int damage){
-
+	public takeDamage(int damage, ITurnable target) : base(target){
+		this.damage = damage;
 	}
 
-	public void doEffects(){
+	public override void doEffect(){
 
 	}
 }
